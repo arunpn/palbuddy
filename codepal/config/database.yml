@@ -1,0 +1,26 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: palbuddy_alpha
+  pool: 5
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: palbuddy_beta
+  pool: 5
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: palbuddy_gamma
+  pool: 5
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock

@@ -1,0 +1,97 @@
+I, [2013-05-12T04:12:22.303174 #3906]  INFO -- : Refreshing Gem list
+/home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load': /home/ghostviper/Work/codebase/palbuddy/codebase/codepal/config/initializers/session_store.rb:3: syntax error, unexpected ':', expecting $end (SyntaxError)
+...sion_store :cookie_store, key: '_codepal_session'
+                              ^
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/engine.rb:588
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/engine.rb:587:in `each'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/engine.rb:587
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/initializable.rb:30:in `run'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/initializable.rb:55:in `run_initializers'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/initializable.rb:54:in `each'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/application.rb:136:in `initialize!'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `send'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/railties-3.2.13/lib/rails/railtie/configurable.rb:30:in `method_missing'
+	from /home/ghostviper/Work/codebase/palbuddy/codebase/codepal/config/environment.rb:5
+	from config.ru:4:in `require'
+	from config.ru:4
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/rack-1.4.5/lib/rack/builder.rb:51:in `instance_eval'
+	from /home/ghostviper/.rvm/gems/ree-1.8.7-2012.02/gems/rack-1.4.5/lib/rack/builder.rb:51:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1
+I, [2013-05-12T04:13:47.113194 #4305]  INFO -- : Refreshing Gem list
+I, [2013-05-12T04:13:55.403374 #4305]  INFO -- : listening on addr=/tmp/.sock fd=8
+I, [2013-05-12T04:13:55.403644 #4305]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2013-05-12T04:13:55.403738 #4305]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2013-05-12T04:13:55.406908 #4305]  INFO -- : master process ready
+I, [2013-05-12T04:13:55.412266 #4309]  INFO -- : worker=0 ready
+I, [2013-05-12T04:13:55.415450 #4312]  INFO -- : worker=1 ready
+I, [2013-05-12T04:13:55.415550 #4315]  INFO -- : worker=2 ready
+I, [2013-05-12T04:13:55.416710 #4318]  INFO -- : worker=3 ready
+I, [2013-05-12T04:25:11.403204 #4305]  INFO -- : reaped #<Process::Status: pid 4309 exit 0> worker=0
+I, [2013-05-12T04:25:11.403508 #4305]  INFO -- : reaped #<Process::Status: pid 4312 exit 0> worker=1
+I, [2013-05-12T04:25:11.403693 #4305]  INFO -- : reaped #<Process::Status: pid 4315 exit 0> worker=2
+I, [2013-05-12T04:25:11.403859 #4305]  INFO -- : reaped #<Process::Status: pid 4318 exit 0> worker=3
+I, [2013-05-12T04:25:11.404093 #4305]  INFO -- : master complete
+I, [2013-05-12T04:33:54.956559 #5817]  INFO -- : Refreshing Gem list
+I, [2013-05-12T04:33:57.435708 #5817]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2013-05-12T04:33:57.435889 #5817]  INFO -- : listening on addr=/tmp/.sock fd=8
+I, [2013-05-12T04:33:57.436096 #5817]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2013-05-12T04:33:57.439456 #5817]  INFO -- : master process ready
+I, [2013-05-12T04:33:57.443262 #5821]  INFO -- : worker=0 ready
+I, [2013-05-12T04:33:57.443262 #5824]  INFO -- : worker=1 ready
+I, [2013-05-12T04:33:57.445886 #5827]  INFO -- : worker=2 ready
+I, [2013-05-12T04:33:57.446199 #5830]  INFO -- : worker=3 ready
+I, [2013-05-12T04:34:02.377101 #5817]  INFO -- : reaped #<Process::Status: pid 5821 exit 0> worker=0
+I, [2013-05-12T04:34:02.377218 #5817]  INFO -- : reaped #<Process::Status: pid 5824 exit 0> worker=1
+I, [2013-05-12T04:34:02.377268 #5817]  INFO -- : reaped #<Process::Status: pid 5827 exit 0> worker=2
+I, [2013-05-12T04:34:02.377300 #5817]  INFO -- : reaped #<Process::Status: pid 5830 exit 0> worker=3
+I, [2013-05-12T04:34:02.377374 #5817]  INFO -- : master complete
+I, [2013-05-12T04:34:08.382061 #5861]  INFO -- : Refreshing Gem list
+I, [2013-05-12T04:34:10.855353 #5861]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2013-05-12T04:34:10.855516 #5861]  INFO -- : listening on addr=/tmp/.sock fd=8
+I, [2013-05-12T04:34:10.855721 #5861]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2013-05-12T04:34:10.859048 #5861]  INFO -- : master process ready
+I, [2013-05-12T04:34:10.862848 #5870]  INFO -- : worker=1 ready
+I, [2013-05-12T04:34:10.862847 #5867]  INFO -- : worker=0 ready
+I, [2013-05-12T04:34:10.865432 #5873]  INFO -- : worker=2 ready
+I, [2013-05-12T04:34:10.865799 #5876]  INFO -- : worker=3 ready
+I, [2013-05-12T04:34:36.598097 #5861]  INFO -- : reaped #<Process::Status: pid 5867 exit 0> worker=0
+I, [2013-05-12T04:34:36.598386 #5861]  INFO -- : reaped #<Process::Status: pid 5870 exit 0> worker=1
+I, [2013-05-12T04:34:36.598549 #5861]  INFO -- : reaped #<Process::Status: pid 5873 exit 0> worker=2
+I, [2013-05-12T04:34:36.598804 #5861]  INFO -- : reaped #<Process::Status: pid 5876 exit 0> worker=3
+I, [2013-05-12T04:34:36.599048 #5861]  INFO -- : master complete
+I, [2013-05-12T04:35:08.018291 #5950]  INFO -- : Refreshing Gem list
+I, [2013-05-12T04:35:10.538996 #5950]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2013-05-12T04:35:10.539154 #5950]  INFO -- : listening on addr=/tmp/.sock fd=8
+I, [2013-05-12T04:35:10.539370 #5950]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2013-05-12T04:35:10.539465 #5950]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2013-05-12T04:35:10.542792 #5950]  INFO -- : master process ready
+I, [2013-05-12T04:35:10.548511 #5954]  INFO -- : worker=0 ready
+I, [2013-05-12T04:35:10.549341 #5960]  INFO -- : worker=2 ready
+I, [2013-05-12T04:35:10.549711 #5957]  INFO -- : worker=1 ready
+I, [2013-05-12T04:35:10.550021 #5963]  INFO -- : worker=3 ready
+I, [2013-05-12T04:35:16.828464 #5950]  INFO -- : reaped #<Process::Status: pid 5954 exit 0> worker=0
+I, [2013-05-12T04:35:16.828732 #5950]  INFO -- : reaped #<Process::Status: pid 5957 exit 0> worker=1
+I, [2013-05-12T04:35:16.828878 #5950]  INFO -- : reaped #<Process::Status: pid 5960 exit 0> worker=2
+I, [2013-05-12T04:35:16.829011 #5950]  INFO -- : reaped #<Process::Status: pid 5963 exit 0> worker=3
+I, [2013-05-12T04:35:16.829241 #5950]  INFO -- : master complete
+I, [2013-05-12T04:35:21.104794 #5995]  INFO -- : Refreshing Gem list
+I, [2013-05-12T04:35:23.589214 #5995]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2013-05-12T04:35:23.589381 #5995]  INFO -- : listening on addr=/tmp/.sock fd=8
+I, [2013-05-12T04:35:23.589589 #5995]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2013-05-12T04:35:23.589682 #5995]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2013-05-12T04:35:23.598197 #5995]  INFO -- : master process ready
+I, [2013-05-12T04:35:23.603865 #5999]  INFO -- : worker=0 ready
+I, [2013-05-12T04:35:23.604496 #6002]  INFO -- : worker=1 ready
+I, [2013-05-12T04:35:23.606141 #6008]  INFO -- : worker=3 ready
+I, [2013-05-12T04:35:23.606428 #6005]  INFO -- : worker=2 ready
+I, [2013-05-12T04:35:32.328306 #5995]  INFO -- : reaped #<Process::Status: pid 5999 exit 0> worker=0
+I, [2013-05-12T04:35:32.328588 #5995]  INFO -- : reaped #<Process::Status: pid 6002 exit 0> worker=1
+I, [2013-05-12T04:35:32.328737 #5995]  INFO -- : reaped #<Process::Status: pid 6005 exit 0> worker=2
+I, [2013-05-12T04:35:32.328870 #5995]  INFO -- : reaped #<Process::Status: pid 6008 exit 0> worker=3
+I, [2013-05-12T04:35:32.329097 #5995]  INFO -- : master complete
