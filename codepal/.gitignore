@@ -11,3 +11,5 @@
 /tmp
 /*.swp
 /*.*~
+/shared/pids/*
+/shared/log/*
