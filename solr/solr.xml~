@@ -1,0 +1,13 @@
+<solr persistent="false" sharedLib="lib">
+  <cores adminPath="/admin/cores">
+    <core name="development" instanceDir="/home/ghostviper/Work/codebase/palbuddy/codebase/solr/development">
+	<property name="dataDir" value="development" />
+    </core>
+    <core name="test" instanceDir="/home/ghostviper/Work/codebase/palbuddy/codebase/solr/test">
+	<property name="dataDir" value="test" />
+    </core>
+    <core name="production" instanceDir="/home/ghostviper/Work/codebase/palbuddy/codebase/solr/production">
+	<property name="dataDir" value="production" />
+    </core>
+  </cores>
+</solr>
