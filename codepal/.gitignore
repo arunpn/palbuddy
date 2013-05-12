@@ -15,4 +15,4 @@
 /shared/pids/*
 /shared/log/*
 ../solr/development/data
-../tomcat-solr/logs
+../tomcat-solr/logs/*.*
