@@ -14,4 +14,5 @@
 /*.*~
 /shared/pids/*
 /shared/log/*
-/solr/data
+../solr/development/data
+../tomcat-solr/logs

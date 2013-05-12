@@ -1,0 +1,12 @@
+global: &global
+  solr_endpoint: http://localhost:7658/solr/development
+
+development: &development
+  <<: *global
+test:
+  <<: *global 
+  solr_endpoint: http://localhost:7658/solr/test
+
+production:
+  <<: *global
+  solr_endpoint: http://localhost:7658/solr/production
