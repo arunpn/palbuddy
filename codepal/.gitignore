@@ -8,8 +8,10 @@
 /.bundle
 /db/*.sqlite3
 /log/*.log
+/log/*.*
 /tmp
 /*.swp
 /*.*~
 /shared/pids/*
 /shared/log/*
+/solr/data
