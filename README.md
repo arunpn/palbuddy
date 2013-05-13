@@ -36,3 +36,10 @@ NOTE : This Virtual Conf looks different that normal or what you do for Passenge
 9. Start / Stop / Restart Unicorn Using the script APP_PATH/script/unicorn.sh 
    `./script/unicorn.sh start` & `./script/unicorn.sh stop` OR `./script/unicorn.sh restart`
 10. Open Browser and palbuddy.dev/ should take you the HOME Page. Done!
+
+### Step 4 - Integrating Apache Solr on Apache Tomcat Server
+1. For Search Puposes please read more about Apache Solr. 
+2. I have pre-configured Apache Tomcat Server and Apache Solr to work with the project out-of-the-box,
+so you don't need to configure anything. When you run the project from the APP_PATH just make sure to start Tomcat Solr
+before you do your indexing/reindexing of data. From APP_PATH `../tomcat-solr/bin/bounce.sh` should stopNstart the Tomcat Solr
+
