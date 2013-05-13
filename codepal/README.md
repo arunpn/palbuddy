@@ -41,12 +41,9 @@ NOTE : This Virtual Conf looks different that normal or what you do for Passenge
 1. For Search Puposes please read more about Apache Solr. 
 2. I have pre-configured Apache Tomcat Server and Apache Solr to work with the project out-of-the-box.
 3. Open ../tomcat-solr/bin/seten.sh and make changes to the PATH where your Project Solr is. 
-For example in the codebase `export CATALINA_OPTS="-Dsolr.solr.home=/home/ghostviper/Work/codebase/palbuddy/codebase/search-palbuddy -server -XX:+HeapDumpOnOutOfMemoryError -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -XX:+PrintTenuringDistribution -verbose:gc -Xloggc:/home/ghostviper/Work/codebase/palbuddy/codebase/tomcat-solr/logs/ -XX:MaxPermSize=200M -Xms1000M -Xmx1000M -XX:+UseParallelGC"
-`
+For example in the codebase `export CATALINA_OPTS="-Dsolr.solr home=/home/ghostviper/Work/codebase/palbuddy/codebase/search-palbuddy .."`
 changes to 
-
-`export CATALINA_OPTS="-Dsolr.solr.home=/YOUR_PATH/palbuddy/codebase/search-palbuddy -server -XX:+HeapDumpOnOutOfMemoryError -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -XX:+PrintTenuringDistribution -verbose:gc -Xloggc:/YOUR_PATH/palbuddy/codebase/tomcat-solr/logs/ -XX:MaxPermSize=200M -Xms1000M -Xmx1000M -XX:+UseParallelGC"
-`
+`export CATALINA_OPTS="-Dsolr.solr.home=/YOUR_PATH/palbuddy/codebase/search-palbuddy .."`
 5. Once done make changes to PATH in ../palbuddy-search/solr.xml similarly updating your PATH
 4. From APP_PATH `../tomcat-solr/bin/bounce.sh` should stopNstart the Tomcat Solr
 
