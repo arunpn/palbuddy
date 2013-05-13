@@ -1,14 +1,14 @@
-if ( pgrep -f catalina.home )
+if ( pgrep -f solr.home )
 then
 	echo "Waiting to kill tomcat"
-	pkill -9 -f catalina.home
+	pkill -9 -f solr.home
 	sleep 5
 fi
 echo "Starting tomcat: $(pgrep -f solr.home)"
 $PWD/$(dirname $0)/catalina.sh start
 sleep 2
 
-if ( pgrep -f catalina.home )
+if ( pgrep -f solr.home )
 then
 	echo "tomcat is up"
 else
