@@ -1,6 +1,5 @@
 .rspec
 /.bundle
-/vendor/bundle
 **.orig
 /tomcat-solr/logs
 codepal/db/*.sqlite3
@@ -12,4 +11,5 @@ codepal/*.*~
 codepal/shared/pids/*
 codepal/shared/log/*
 search-palbuddy/solr/development/data/*
-tomcat-solr/logs/
+tomcat-solr/logs/*.*
+/codepal/vendor/bundle
