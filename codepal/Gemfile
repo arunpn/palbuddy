@@ -8,9 +8,13 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'zurb-foundation', '~> 4.0.0'
+  gem 'jquery-rails','~>2.2.1'
+  gem 'jquery-ui-rails','~>4.0.2'
 end
 gem 'execjs','~>1.4.0'
-gem 'jquery-rails','~>2.2.1'
 #Easy deployment in Amazon EC2
 gem 'capistrano','~>2.14.2'
 gem 'rvm-capistrano','~>1.2.7'

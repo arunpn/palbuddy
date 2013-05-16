@@ -13,3 +13,4 @@ codepal/shared/log/*
 search-palbuddy/solr/development/data/*
 tomcat-solr/logs/*.*
 /codepal/vendor/bundle
+shared/log/*.*

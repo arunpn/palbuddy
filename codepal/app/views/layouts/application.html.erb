@@ -1,14 +1,132 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <title>Codepal</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title><%= content_for?(:title) ? yield(:title) : "Palbuddy" %></title>
+ <%= stylesheet_link_tag    "application" %>
+ <%= javascript_include_tag "vendor/custom.modernizr" %>
+ <%= javascript_include_tag "vendor/zepto" %>
+ <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navigation sticky"> 
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="<%= root_url %>">palbuddy</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
 
-<%= yield %>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="divider"></li>
+          <li class="active"><a href="#">Profile</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Connections</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Messaging</a>
 
+            <ul class="dropdown">
+              <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+
+                <ul class="dropdown">
+                  <li><label>Dropdown Level 2 Label</label></li>
+                  <li><a href="#">Dropdown Level 2a</a></li>
+                  <li><a href="#">Dropdown Level 2b</a></li>
+                  <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
+
+                    <ul class="dropdown">
+                      <li><label>Dropdown Level 3 Label</label></li>
+                      <li><a href="#">Dropdown Level 3a</a></li>
+                      <li><a href="#">Dropdown Level 3b</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Dropdown Level 3c</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown Level 2d</a></li>
+                  <li><a href="#">Dropdown Level 2e</a></li>
+                  <li><a href="#">Dropdown Level 2f</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 1b</a></li>
+              <li><a href="#">Dropdown Level 1c</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Dropdown Level 1d</a></li>
+              <li><a href="#">Dropdown Level 1e</a></li>
+              <li><a href="#">Dropdown Level 1f</a></li>
+              <li class="divider"></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li class="has-form">
+            <form>
+              <div class="row collapse">
+                <div class="small-8 columns">
+                  <input type="text">
+                </div>
+                <div class="small-4 columns">
+                  <a href="#" class="alert button">Search</a>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="divider show-for-small"></li>
+          <li class="has-form">
+            <a class="button" href="#">Button!</a>
+          </li>
+          <li class="divider hide-for-small"></li>
+          <li class="has-dropdown"><a href="#">my Account</a>
+
+            <ul class="dropdown">
+              <li><label>Dropdown Level 1 Label</label></li>
+              <li class="has-dropdown"><a href="#" class="">Dropdown Level 1a</a>
+
+                <ul class="dropdown">
+                  <li><a href="#">Dropdown Level 2a</a></li>
+                  <li><a href="#">Dropdown Level 2b</a></li>
+                  <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
+
+                    <ul class="dropdown">
+                      <li><a href="#">Dropdown Level 3a</a></li>
+                      <li><a href="#">Dropdown Level 3b</a></li>
+                      <li><a href="#">Dropdown Level 3c</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown Level 2d</a></li>
+                  <li><a href="#">Dropdown Level 2e</a></li>
+                  <li><a href="#">Dropdown Level 2f</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 1b</a></li>
+              <li><a href="#">Dropdown Level 1c</a></li>
+              <li class="divider"></li>
+              <li><label>Dropdown Level 1 Label</label></li>
+              <li><a href="#">Dropdown Level 1d</a></li>
+              <li><a href="#">Dropdown Level 1e</a></li>
+              <li><a href="#">Dropdown Level 1f</a></li>
+              <li class="divider"></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+  <div class="main">
+    <%= yield %>
+  </div>
+  <%= javascript_include_tag "application" %>
 </body>
 </html>
